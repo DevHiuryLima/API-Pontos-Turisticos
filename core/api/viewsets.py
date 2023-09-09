@@ -1,3 +1,5 @@
+from rest_framework.authentication import BasicAuthentication, TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.filters import SearchFilter
 from rest_framework.decorators import action
@@ -11,6 +13,11 @@ class PontoTuristicoViewSet(ModelViewSet):
     """
     serializer_class = PontoTuristicoSerializer
     filter_backends = [SearchFilter]
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [TokenAuthentication]  # Colocando assim passo o token no Header como na vídeo aula.
+    # authentication_classes = [BasicAuthentication]  # Usando assim no Insomnia ou postman tenho que ir pelo "Basic Auth"
+                                                        # e colocar o login e senha do usuário.
+
     search_fields = ['nome', 'descricao', 'endereco__linha1']
     lookup_field = 'id'  # Significa que esse é o campo que gostaria que fosse o campo de busca ao invés do 'id'.
                             # esse campo tem que ser exclusivo e unique. Não pode ter dois valores iguais.
