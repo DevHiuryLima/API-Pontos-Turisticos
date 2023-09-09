@@ -12,6 +12,9 @@ class PontoTuristicoViewSet(ModelViewSet):
     serializer_class = PontoTuristicoSerializer
     filter_backends = [SearchFilter]
     search_fields = ['nome', 'descricao', 'endereco__linha1']
+    lookup_field = 'id'  # Significa que esse é o campo que gostaria que fosse o campo de busca ao invés do 'id'.
+                            # esse campo tem que ser exclusivo e unique. Não pode ter dois valores iguais.
+                            # Exemplo, se colocar 'nome' e tiver vários dados na tabel com nomes iguais vai dar erro.
 
     def get_queryset(self):
         id = self.request.query_params.get('id', None)
