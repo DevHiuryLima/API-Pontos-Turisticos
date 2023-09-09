@@ -1,4 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.filters import SearchFilter
 from rest_framework.decorators import action
 from core.models import PontoTuristico
 from .serializers import PontoTuristicoSerializer
@@ -8,13 +9,11 @@ class PontoTuristicoViewSet(ModelViewSet):
     """
     A simple ViewSet for viewing and editing accounts.
     """
-    # queryset = PontoTuristico.objects.all()  # posso mudar o all() por filter(aprovado-True) mas não é recomandado fazer
-                                             # esse filtro aqui. Pois pode haver filtragem mais complexa.
     serializer_class = PontoTuristicoSerializer
+    filter_backends = [SearchFilter]
+    search_fields = ['nome', 'descricao', 'endereco__linha1']
 
     def get_queryset(self):
-        # return PontoTuristico.objects.filter(aprovado=True)
-
         id = self.request.query_params.get('id', None)
         nome = self.request.query_params.get('nome', None)
         descricao = self.request.query_params.get('descricao', None)
