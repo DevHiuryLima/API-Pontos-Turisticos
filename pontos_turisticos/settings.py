@@ -16,7 +16,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['apipontosturisticos-b78fd0761208.herokuapp.com', 'localhost:8000', 'http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['apipontosturisticos-b78fd0761208.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
