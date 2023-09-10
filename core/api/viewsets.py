@@ -13,8 +13,8 @@ class PontoTuristicoViewSet(ModelViewSet):
     """
     serializer_class = PontoTuristicoSerializer
     filter_backends = [SearchFilter]
-    permission_classes = [IsAuthenticated]
-    authentication_classes = [TokenAuthentication]  # Colocando assim passo o token no Header como na vídeo aula.
+    # permission_classes = [IsAuthenticated]
+    # authentication_classes = [TokenAuthentication]  # Colocando assim passo o token no Header como na vídeo aula.
     # authentication_classes = [BasicAuthentication]  # Usando assim no Insomnia ou postman tenho que ir pelo "Basic Auth"
                                                         # e colocar o login e senha do usuário.
 
