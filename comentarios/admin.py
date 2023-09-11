@@ -8,4 +8,4 @@ class ComentarioAdmin(admin.ModelAdmin):
     actions = [reprova_comentarios, aprova_comentarios]
 
 
-admin.site.register(Comentario), ComentarioAdmin
+admin.site.register(Comentario, ComentarioAdmin)
