@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from rest_framework.authentication import BasicAuthentication, TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
@@ -67,3 +68,14 @@ class PontoTuristicoViewSet(ModelViewSet):
     @action(methods=['get'], detail=False)
     def teste(self, request):
         pass
+
+    @action(methods=['post'], detail=True)
+    def associa_atracoes(self, request, id):
+        atracoes = request.data['ids']
+
+        ponto = PontoTuristico.objects.get(id=id)
+
+        ponto.atracoes.set(atracoes)
+
+        ponto.save()
+        return HttpResponse('Ok')
