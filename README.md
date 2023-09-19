@@ -65,7 +65,30 @@ incluindo viewsets, serializers, respostas, permissões, autenticação por toke
 
 ## 🎨 Layout
 
-:construction: Em construção :construction:
+Essas são apenas algumas telas de documentação da API do Django Rest Framework.
+<div align="center">  
+    <a href="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/8ec04471-1858-4344-a3b5-1f92a6590a4b" target="_blank" >
+      <img src="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/8ec04471-1858-4344-a3b5-1f92a6590a4b" title="Tela inicial que mostra uma visão geral dos principais endpoints da API." alt="Tela inicial que mostra uma visão geral dos principais endpoints da API.">
+    </a>
+</div>
+
+<div align="center">
+  <a href="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/8ec04471-1858-4344-a3b5-1f92a6590a4b" target="_blank" >
+    <img src="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/d39136e6-7e50-41bb-b81b-662001e42041" title="Tela de 'Detail View' de um Ponto Turístico. Uma tela que exibe os detalhes de um ponto." alt="Tela de 'Detail View' de um Ponto Turístico. Uma tela que exibe os detalhes de um ponto.">
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/8dd41731-df88-4794-8206-8c2b448c7ebd" target="_blank" >
+    <img src="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/8dd41731-df88-4794-8206-8c2b448c7ebd" title="Tela de 'List View' de Atração. Uma tela que exibe todas as atrações." alt="Tela de 'List View' de Atração. Uma tela que exibe todas as atrações.">
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/7ae0ce70-5a6e-449a-ac00-46e14fc0b7e8" target="_blank" >
+    <img src="https://github.com/DevHiuryLima/API-Pontos-Turisticos/assets/69491885/7ae0ce70-5a6e-449a-ac00-46e14fc0b7e8" title="Tela de 'List View' de Endereço. Uma tela que exibe todos os endereços." alt="Tela de 'List View' de Endereço. Uma tela que exibe todos os endereços.">
+  </a>
+</div>
 
 &#xa0;
 
