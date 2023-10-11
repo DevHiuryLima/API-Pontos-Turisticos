@@ -19,7 +19,7 @@
 ## 📖 Sobre
 
 <p align="justify">
-Esta API é um projeto durante um curso da 
+Esta API é um projeto feito durante um curso da 
 <a href="https://www.udemy.com/" target="_blank">Udemy</a> 
 chamado <a href="https://www.udemy.com/course/apis-restful-com-django-rest-framework/" target="_blank">Criando poderosas 
 API's RESTful com Django Rest Framework</a>. Neste aprendi dominar o Django Rest Framework, uma poderosa ferramenta que 
